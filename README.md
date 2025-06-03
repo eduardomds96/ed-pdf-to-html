@@ -22,9 +22,12 @@ Isso abrirá a página no seu navegador com renderização LaTeX funcionando.
 
 ## Estrutura
 
+```plaintext
 📁 projeto/
 ├── index.html
 ├── styles.css
 ├── script.js
 ├── imagens/
 └── README.md
+
+```
