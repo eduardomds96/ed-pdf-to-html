@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Equações do 2º Grau</title>
+    <link rel="stylesheet" href="src/css/styles.css" />
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script
+      id="MathJax-script"
+      async
+      src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
+    ></script>
+  </head>
+  <body>
+    <!-- Menu fixo -->
+    <nav class="menu">
+      <ul>
+        <li><a href="#pagina1">Página 1</a></li>
+        <li><a href="#pagina2">Página 2</a></li>
+        <li><a href="#pagina3">Página 3</a></li>
+        <li><a href="#pagina4">Página 4</a></li>
+      </ul>
+    </nav>
+
+    <!-- Header com imagem de fundo -->
+    <header class="header">
+      <div class="header-content">
+        <h1>Equações do 2º Grau</h1>
+        <h2>Como resolver e identificar</h2>
+      </div>
+    </header>
+
+    <!-- Conteúdo principal -->
+    <main class="content">
+      <section class="checkin-box">
+        <div class="checkin-header">CHECK-IN</div>
+        <div class="checkin-content">
+          <p>
+            Desde os primórdios da civilização, a humanidade sentiu a
+            necessidade de desenvolver ferramentas para resolver problemas
+            práticos do dia a dia, como medir terras ou prever colheitas. Dentre
+            essas ferramentas, surgiram as equações, fundamentais para descrever
+            e resolver situações envolvendo incógnitas. O expoente de uma
+            incógnita, como o x, desempenha um papel importante na classificação
+            dessas equações.
+          </p>
+          <p>Na imagem desta abertura podemos ver algumas equações.</p>
+          <div class="checkin-questions">
+            <div class="question">
+              <span class="icone">💬</span>
+              <span
+                ><strong>1.</strong> Como saber quando uma equação é do segundo
+                grau?</span
+              >
+            </div>
+            <div class="question">
+              <span class="icone">💬</span>
+              <span
+                ><strong>2.</strong> Você sabe como resolver uma equação como
+                essa?</span
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="objetivos-capitulo">
+        <!-- Dropdown -->
+
+        <details class="dropdown">
+          <summary>
+            Ao final deste capítulo, espera-se que você seja capaz de:
+          </summary>
+          <ul>
+            <li>
+              identificar e resolver equações do 2º grau incompletas e
+              completas;
+            </li>
+            <li>
+              utilizar diferentes métodos para resolução de equações do 2º grau;
+            </li>
+            <li>analisar o discriminante de uma equação do 2º grau;</li>
+            <li>resolver problemas utilizando equações do 2º grau.</li>
+          </ul>
+        </details>
+      </section>
+
+      <!-- Definição -->
+      <section>
+        <div>
+          <h3 class="title-content">Equações do 2º grau com uma incógnita</h3>
+        </div>
+        <p>
+          No 8º ano houve a introdução do estudo da equação do 2º grau. Agora
+          vamos retomar esse estudo e aprofundá-lo.
+        </p>
+        <h3 class="subtitulo-verde">
+          Definição de equação do 2º grau com uma incógnita
+        </h3>
+        <p>
+          <strong>Equação do 2º grau</strong>, ou
+          <strong>equação quadrática</strong>, com uma incógnita é toda equação
+          do tipo: <span>\( ax^2 + bx + c = 0 \)</span> em que x representa a
+          incógnita e <em>a</em>, <em>b</em> e <em>c</em> são os coeficientes
+          numéricos e representam números reais, com <span>a ≠ 0</span>.
+        </p>
+        <img src="src/imagens/equação.png" alt="" class="img" />
+        <p>
+          <span class="glossario-termo" data-term="forma geral">
+            Forma Geral
+            <span class="glossario-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 46 46"
+                fill="none"
+              >
+                <rect
+                  width="46"
+                  height="46"
+                  fill="url(#paint0_linear_47_118)"
+                />
+                <path
+                  d="M20.656 26.2236L19.664 11.5996H25.616L24.624 26.2236H20.656ZM22.64 34.2556C21.744 34.2556 21.008 33.9676 20.432 33.3916C19.856 32.8156 19.568 32.1329 19.568 31.3436C19.568 30.5329 19.856 29.8609 20.432 29.3276C21.008 28.7729 21.744 28.4956 22.64 28.4956C23.5573 28.4956 24.2933 28.7729 24.848 29.3276C25.424 29.8609 25.712 30.5329 25.712 31.3436C25.712 32.1329 25.424 32.8156 24.848 33.3916C24.2933 33.9676 23.5573 34.2556 22.64 34.2556Z"
+                  fill="#56777D"
+                />
+                <defs>
+                  <linearGradient
+                    id="paint0_linear_47_118"
+                    x1="46"
+                    y1="-0.0766611"
+                    x2="0"
+                    y2="45.9233"
+                    gradientUnits="userSpaceOnUse"
+                  >
+                    <stop stop-color="#FFE9A9" />
+                    <stop offset="1" stop-color="#F5C435" />
+                  </linearGradient>
+                </defs>
+              </svg>
+            </span>
+          </span>
+        </p>
+        <ul>
+          <li>\(a\) é coeficiente numérico de \(x^2\)</li>
+          <li>\(b\) é coeficiente numérico de \(x\)</li>
+          <li>\(c\) é denominado termo independente</li>
+        </ul>
+        <p>
+          Assim, por definição, são exemplos de equações do 2º grau com uma
+          incógnita:
+        </p>
+
+        <p>Exemplos:</p>
+        <p>
+          \[ 4x^2 - 9 = 0, \quad \text{em que } \left\{ \begin{array}{l} a = 4
+          \\ b = 0 \\ c = -9 \end{array} \right. \]
+        </p>
+
+        <p>
+          \[ 3x^2 - 5x + 12 = 0, \quad \text{em que } \left\{ \begin{array}{l} a
+          = 3 \\ b = -5 \\ c = 12 \end{array} \right. \]
+        </p>
+
+        <p>
+          \[ -x^2 + 3x = 0, \quad \text{em que } \left\{ \begin{array}{l} a = -1
+          \\ b = 3 \\ c = 0 \end{array} \right. \]
+        </p>
+
+        <p>
+          \[ -\frac{x^2}{2} + 11x - 8 = 0, \quad \text{em que } \left\{
+          \begin{array}{l} a = -\frac{1}{2} \\ b = 11 \\ c = -8 \end{array}
+          \right. \]
+        </p>
+      </section>
+
+      <section class="block-questions">
+        <div class="question">
+          <p><span class="numero">1.</span> Qual é o tema do poema?</p>
+          <hr />
+        </div>
+
+        <div class="question">
+          <p>
+            <span class="numero">2.</span> Sublinhe o trecho do poema que
+            reconhece a importância da água para a reprodução dos seres vivos e
+            a manutenção da vida.
+          </p>
+          <hr />
+        </div>
+
+        <div class="question">
+          <p>
+            <span class="numero">3.</span> Como a água absorvida pelas plantas
+            pode passar para outros seres vivos?
+          </p>
+          <hr />
+        </div>
+
+        <div class="question">
+          <p>
+            <span class="numero">4.</span> Use a ilustração a seguir para
+            representar o ciclo da água. Lembre-se de incluir setas e as
+            mudanças de estado físico: condensação e evaporação.
+          </p>
+          <!-- Lightbox -->
+          <div class="lightbox-container">
+            <img
+              src="src/imagens/lightbox.png"
+              alt="Imagem exemplo"
+              class="thumbnail"
+              onclick="openLightbox()"
+            />
+            <div class="lightbox" id="lightbox">
+              <span class="close" onclick="closeLightbox()">&times;</span>
+              <div class="lightbox-content">
+                <img src="src/imagens/lightbox.png" alt="Imagem grande" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="question">
+          <p>
+            <span class="numero">5.</span> . Estudos apontam que a água tratada
+            tem se tornado um recurso cada vez mais escasso. Converse com os
+            colegas sobre os impactos da falta de água para os seres vivos e o
+            que vocês podem fazer para economizar esse recurso
+          </p>
+          <hr />
+        </div>
+      </section>
+
+      <!-- Glossário -->
+      <section class="glossario">
+        <p><strong>Glossário:</strong></p>
+        <p>
+          <span class="glossario-termo" data-term="incógnita">incógnita</span>,
+          <span class="glossario-termo" data-term="coeficiente"
+            >coeficiente</span
+          >,
+          <span class="glossario-termo" data-term="termo independente"
+            >termo independente</span
+          >
+        </p>
+      </section>
+    </main>
+    <script src="src/js/main.js"></script>
+  </body>
+</html>

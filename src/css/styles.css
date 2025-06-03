@@ -1,0 +1,254 @@
+/* styles.css */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  overflow-x: hidden;
+}
+
+.img {
+  max-width: 100%;
+  margin: 20px 0;
+}
+
+.menu {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 80px;
+  background-color: #333;
+  display: flex;
+  align-items: center;
+  z-index: 1000;
+}
+
+.menu ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0 20px;
+  gap: 20px;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.header {
+  height: 65vh;
+  width: 100vw;
+  background: url("../imagens/header.png") no-repeat center center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding-top: 80px;
+  color: white;
+  overflow: hidden;
+}
+
+.header-content h1 {
+  font-size: 3em;
+}
+
+.header-content h2 {
+  font-size: 1.5em;
+}
+
+.content {
+  width: 80%;
+  margin: 0 auto;
+  padding: 40px 0;
+}
+
+.checkin-box {
+  background-color: #dcefff;
+  border-radius: 6px;
+  width: 100%;
+  padding: 0;
+  overflow: hidden;
+  font-family: Arial, sans-serif;
+  margin: 40px auto;
+}
+
+.checkin-header {
+  background-color: #0071bc;
+  color: white;
+  padding: 10px 20px;
+  font-weight: bold;
+  font-size: 1.2rem;
+  width: fit-content;
+  transform: skewX(-20deg);
+  margin-left: -10px;
+  margin-bottom: -10px;
+}
+
+.checkin-header::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.checkin-content {
+  padding: 20px;
+  font-size: 1rem;
+  color: #333;
+}
+
+.checkin-questions {
+  margin-top: 20px;
+}
+
+.title-content {
+  color: #0071bc;
+  font-size: 1.8rem;
+  font-weight: bold;
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.title-content:before {
+  content: "";
+  background-image: url("../imagens/marcacao.png");
+  width: 53px;
+  height: 49px;
+  display: block;
+}
+
+.introducao-block {
+  color: #222;
+  max-width: 700px;
+  margin: 40px auto;
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+.subtitulo-verde {
+  color: #009473;
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.objetivos-capitulo {
+  background-color: #fde6cc;
+  padding: 20px;
+  border-radius: 8px;
+  font-family: Arial, sans-serif;
+  margin: 40px auto;
+}
+
+.objetivos-capitulo ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin-top: 10px;
+}
+
+.objetivos-capitulo li {
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.pergunta {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 10px;
+}
+
+.pergunta .icone {
+  color: white;
+  background-color: #0071bc;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  margin-right: 10px;
+}
+
+.pergunta strong {
+  color: #0071bc;
+}
+
+.dropdown summary {
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.glossario-termo {
+  border-bottom: 1px dotted #000;
+  cursor: help;
+  position: relative;
+}
+
+.lightbox-container {
+  margin-top: 40px;
+  text-align: center;
+  width: 100%;
+}
+
+.thumbnail {
+  width: 300px;
+  cursor: pointer;
+}
+
+.block-questions {
+  margin: 40px auto;
+}
+
+.question {
+  margin-bottom: 20px;
+}
+
+.block-questions .numero {
+  font-weight: bold;
+  color: #3ca235; /* tom de verde usado na imagem */
+}
+
+.block-questions hr {
+  border: none;
+  border-bottom: 1px solid #999;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.lightbox {
+  display: none;
+  position: fixed;
+  top: 10%;
+  left: 10%;
+  width: 80vw;
+  height: 80vh;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 9999;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.lightbox img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.lightbox .close {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  color: white;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.lightbox-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
